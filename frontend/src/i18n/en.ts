@@ -1,0 +1,68 @@
+const en = {
+  nav: {
+    dashboard: 'Dashboard',
+    analysis: 'Analysis',
+    settings: 'Settings',
+    alerts: 'Alerts',
+  },
+  navbar: {
+    go: 'Go',
+    live: 'Live',
+    disconnected: 'Disconnected',
+  },
+  dashboard: {
+    generating_signal: 'Generating signal…',
+    loading_chart: 'Loading chart…',
+    sentiment: 'Sentiment',
+    score: 'Score',
+    news_impact: 'News Impact',
+    key_events: 'Key Events',
+    levels: 'Levels',
+    support: 'Support',
+    resistance: 'Resistance',
+  },
+  analysis: {
+    title: '{{symbol}} — Analysis',
+    technical: 'Technical Indicators (latest)',
+    loading: 'Loading…',
+    ml_prediction: 'ML Prediction',
+    train_model: 'Train model',
+    not_trained: 'Model not trained yet — click "Train model" to start.',
+    news_sentiment: 'News & Sentiment',
+    prediction: 'Prediction',
+    confidence: 'Confidence',
+    expected_return: 'Expected Return',
+    training_started: 'Training started for {{symbol}}. Check server logs.',
+  },
+  signal: {
+    confidence: 'confidence',
+    buy: 'BUY',
+    sell: 'SELL',
+    hold: 'HOLD',
+  },
+  toast: {
+    buy: '🟢 BUY',
+    sell: '🔴 SELL',
+    hold: '⚪ HOLD',
+  },
+  alerts: {
+    title: 'Alert History',
+    count: '{{count}} signals stored',
+    empty: 'No alerts yet. Signals with confidence ≥ threshold are stored here automatically.',
+  },
+  settings: {
+    title: 'Settings',
+    symbol: 'Symbol',
+    timeframe: 'Timeframe',
+    timeframe_hint: 'short = 1mo/1h · medium = 6mo/1d · long = 2y/1wk',
+    risk_level: 'Risk Level',
+    risk_hint: 'Affects the signal threshold (low = 0.60, medium = 0.40, high = 0.25)',
+    strategy_type: 'Strategy Type',
+    strategy_hint: 'Weights: scalping TA=70% · swing TA=40%/Fund=30%/ML=30% · long_term Fund=50%',
+    notifications: 'Notifications',
+    notifications_hint: 'Configure Telegram, Email, and push (ntfy.sh) in backend/.env. Notifications fire automatically when a signal exceeds the confidence threshold.',
+    language: 'Language',
+  },
+} as const
+
+export default en

@@ -1,0 +1,68 @@
+const it = {
+  nav: {
+    dashboard: 'Dashboard',
+    analysis: 'Analisi',
+    settings: 'Impostazioni',
+    alerts: 'Avvisi',
+  },
+  navbar: {
+    go: 'Vai',
+    live: 'In diretta',
+    disconnected: 'Disconnesso',
+  },
+  dashboard: {
+    generating_signal: 'Calcolo segnale…',
+    loading_chart: 'Caricamento grafico…',
+    sentiment: 'Sentiment',
+    score: 'Punteggio',
+    news_impact: 'Impatto notizie',
+    key_events: 'Eventi chiave',
+    levels: 'Livelli',
+    support: 'Supporto',
+    resistance: 'Resistenza',
+  },
+  analysis: {
+    title: '{{symbol}} — Analisi',
+    technical: 'Indicatori tecnici (ultimi)',
+    loading: 'Caricamento…',
+    ml_prediction: 'Previsione ML',
+    train_model: 'Addestra modello',
+    not_trained: 'Modello non ancora addestrato — clicca "Addestra modello" per iniziare.',
+    news_sentiment: 'Notizie & Sentiment',
+    prediction: 'Previsione',
+    confidence: 'Confidenza',
+    expected_return: 'Rendimento atteso',
+    training_started: 'Addestramento avviato per {{symbol}}. Controlla i log del server.',
+  },
+  signal: {
+    confidence: 'confidenza',
+    buy: 'COMPRA',
+    sell: 'VENDI',
+    hold: 'ATTENDI',
+  },
+  toast: {
+    buy: '🟢 COMPRA',
+    sell: '🔴 VENDI',
+    hold: '⚪ ATTENDI',
+  },
+  alerts: {
+    title: 'Storico avvisi',
+    count: '{{count}} segnali salvati',
+    empty: 'Nessun avviso ancora. I segnali con confidenza ≥ soglia vengono salvati automaticamente.',
+  },
+  settings: {
+    title: 'Impostazioni',
+    symbol: 'Simbolo',
+    timeframe: 'Arco temporale',
+    timeframe_hint: 'short = 1 mese/1h · medium = 6 mesi/1g · long = 2 anni/1 sett.',
+    risk_level: 'Livello di rischio',
+    risk_hint: 'Influenza la soglia del segnale (basso = 0.60, medio = 0.40, alto = 0.25)',
+    strategy_type: 'Tipo di strategia',
+    strategy_hint: 'Pesi: scalping TA=70% · swing TA=40%/Fund=30%/ML=30% · long_term Fund=50%',
+    notifications: 'Notifiche',
+    notifications_hint: 'Configura Telegram, Email e push (ntfy.sh) in backend/.env. Le notifiche scattano automaticamente quando un segnale supera la soglia di confidenza.',
+    language: 'Lingua',
+  },
+} as const
+
+export default it
